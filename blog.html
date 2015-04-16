@@ -25,3 +25,24 @@ permalink: /blog/
 		</tbody>
 	</table>
 </div>
+
+          <section id="three" class="wrapper style1 special">
+            <div class="inner">
+              <header class="major">
+                <h2>Blog</h2>
+                <p>Thoughts on what it means to live as a discerning church</p>
+              </header>
+              <ul class="features">
+              {% for post in site.posts limit:4 %}
+                <li class="icon fa-pencil ">
+                  <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+                  {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
+                  <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                </li>
+                {% endfor %}
+              </ul>
+               <ul class="actions">
+                 <li><a href="blog" class="button">Read All Blog Entries</a></li>
+              </ul>
+
+            </div>
