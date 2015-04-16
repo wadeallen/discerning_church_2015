@@ -16,13 +16,11 @@ permalink: /blog/
 		</thead>
 		<tbody>
 		{% for post in site.posts %}
-		<a href="{{ post.url }}" title="{{ post.title }}">
 		<tr>
+				<td>{% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}</td>
 				<td>{{ post.title }}</td>
-				<td>Ante turpis integer aliquet porttitor.</td>
 				<td>29.99</td>
 			</tr>
-		</a>
 		{% endfor %}
 		</tbody>
 	</table>
