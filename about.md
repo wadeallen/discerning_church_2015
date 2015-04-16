@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about
 ---
 
 I am the pastor of a **150 year old** congregation in Muncie, Indiana.  The church in Muncie has experienced extreme change over the years.
