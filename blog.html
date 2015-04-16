@@ -5,44 +5,20 @@ description: Thoughts on what it means to </br> live as a discerning church
 permalink: /blog/
 ---
 
-<div class="table-wrapper">
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Title</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-		{% for post in site.posts %}
-		<tr>
-				<td>{% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}</td>
-				<td>{{ post.title }}</td>
-				<td><a href="{{ post.url }}" class="button">Read More</a></td>
-			</tr>
-		{% endfor %}
-		</tbody>
-	</table>
-</div>
+<section id="three" class="wrapper special">
+  <div class="inner">
+    <ul class="features">
+    {% for post in site.posts limit: 10 %}
+      <li>
+        <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+        {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
+        <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      </li>
+      {% endfor %}
+    </ul>
 
-          <section id="three" class="wrapper style1 special">
-            <div class="inner">
-              <header class="major">
-                <h2>Blog</h2>
-                <p>Thoughts on what it means to live as a discerning church</p>
-              </header>
-              <ul class="features">
-              {% for post in site.posts limit:4 %}
-                <li class="icon fa-pencil ">
-                  <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-                  {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
-                  <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-                </li>
-                {% endfor %}
-              </ul>
-               <ul class="actions">
-                 <li><a href="blog" class="button">Read All Blog Entries</a></li>
-              </ul>
+     <ul class="actions">
+                 <li><a href="/archive" class="button">Read All Blog Entries</a></li>
+     </ul>
 
-            </div>
+  </div>
