@@ -1,0 +1,12 @@
+# Site settings
+title: Discerning Church
+description: Serving a 152 year-old congregation has its challenges. We are learning to be a discerning congregation as we follow God in His mission.
+email: wadesallen@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://discerningchurch.org" # the base hostname & protocol for your site
+permalink: /:year/:month/:day/:title/
+twitter_username: wadeallen
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown

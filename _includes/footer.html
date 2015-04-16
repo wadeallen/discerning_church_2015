@@ -1,0 +1,13 @@
+<!-- Footer -->
+ <footer id="footer">
+   <ul class="icons">
+     {% if site.twitter_username %}<li><a href="http://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>{% else %}{% endif %}
+     {% if site.facebook_username %}<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>{% else %}{% endif %}
+     {% if site.instagram_username %}<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>{% else %}{% endif %}
+     {% if site.dribble_username %}<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>{% else %}{% endif %}
+     {% if site.email %}<li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>{% else %}{% endif %}
+   </ul>
+   <ul class="copyright">
+     <li>&copy; {% if site.title %}{{ site.title }}{% else %}{% endif %}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+   </ul>
+ </footer>

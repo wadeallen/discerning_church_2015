@@ -1,0 +1,99 @@
+---
+layout: default
+title: Home
+---
+
+		<!-- Banner -->
+     <section id="banner">
+        <div class="inner">
+          <h2>Discerning Church</h2>
+          <p>A Process to that aids <br /> churches as they <strong>discern</strong><br />
+      the direction of the Spirit of God.</p>
+        </div>
+        <a href="#one" class="more scrolly">Learn More</a>
+      </section>
+
+        <!-- From Conflict to Unity -->
+          <section id="one" class="wrapper style1 special">
+            <div class="inner">
+              <header class="major">
+                <h2>From Conflict<br />
+                to Unity</h2>
+                <p>In the context of a 150+ year old congregation, we have found a better way to make decisions. In contrast to models of power and persuasion, we have developed a process that helps us discern and follow God's leading in all areas of the church.</p>
+               <p>The discernment process is a four-stage process that guides ministry teams through a process that is slow enough to allow God's Spirit to work. At the same time, the process continues to press the team forward in the active work of discering.</p>
+              <p>The four stages are 1) Explore, 2) Listen, 3) Examine and 4) Communicate.</p>
+              <p>Each stage is prefaced and proceeded with prayer. The process aids the team as they discern God's movement in their context.</p>
+              </header>
+              <ul class="icons major">
+                <li><span class="icon fa-list-ol major style1"><span class="label">Explore</span></span></li>
+                <li><span class="icon fa-comment major style2"><span class="label">Listen</span></span></li>
+                <li><span class="icon fa-eye major style3"><span class="label">Examine</span></span></li>
+                <li><span class="icon fa-bullhorn major style4"><span class="label">Communicate</span></span></li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- Stages of Process -->
+          <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+              <div class="image"><img src="images/explore.jpg" alt="" /></div><div class="content">
+                <h2>Explore</h2>
+                <p>The first stage of the process is designed to help clarify the issue and define options. The team works to create a clear statement that spells out the decision as well as feasible options to explore.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/listen.jpg" alt="" /></div><div class="content">
+                <h2>Listen</h2>
+                <p>The team works, during the second stage, to develop a listening stategy. The plan should include practices that include listening to God, to the church body and to outside sources.</p>
+              </div>
+            </section>
+            <section class="spotlight">
+              <div class="image"><img src="images/examine.jpg" alt="" /></div><div class="content">
+                <h2>Examine</h2>
+                <p>The third stage involves bringing the learnings of the listening stage to the table. The team examines the findings to discern God's leading. Usually, the team is able to come to a conclusion during this stage. However, there may be times when the team needs to extend the listening stage and later return to the examine stage.</p>
+              </div>
+            </section>
+             <section class="spotlight">
+              <div class="image"><img src="images/communicate.jpg" alt="" /></div><div class="content">
+                <h2>Communicate</h2>
+                <p>The fourth and final state involves communicating the story of discernment. The work is not over at the decision. Rather, the team works out the details of implementation and relating the decision to the wider church body.</p>
+              </div>
+            </section>
+          </section>
+
+        <!-- Blog -->
+          <section id="three" class="wrapper style3 special">
+            <div class="inner">
+              <header class="major">
+                <h2>Blog</h2>
+                <p>Thoughts on what it means to live as a discerning church</p>
+              </header>
+              <ul class="features">
+              {% for post in site.posts limit:4 %}
+                <li class="icon fa-pencil ">
+                  <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</h3>
+                  {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
+                  <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                </li>
+                {% endfor %}
+              </ul>
+               <ul class="actions">
+                 <li><a href="blog.html" class="button">Read All Blog Entries</a></li>
+              </ul>
+
+            </div>
+          </section>
+
+        <!-- CTA -->
+          <section id="cta" class="wrapper style4">
+            <div class="inner">
+              <header>
+                <h2>Want to find our more?</h2>
+                <p>If you would like more information about the process, please feel free to contact us.</p>
+              </header>
+              <ul class="actions vertical">
+                <li><a href="/contact.html" class="button fit special">Contact</a></li>
+                <li><a href="#" class="button fit">Testimonials</a></li>
+              </ul>
+            </div>
+          </section>
