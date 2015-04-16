@@ -17,7 +17,7 @@ permalink: /blog/
 		<tbody>
 		{% for post in site.posts %}
 			<tr>
-				<td>Item One</td>
+				<td>><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</td>
 				<td>Ante turpis integer aliquet porttitor.</td>
 				<td>29.99</td>
 			</tr>
