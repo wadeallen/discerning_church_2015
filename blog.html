@@ -19,7 +19,7 @@ permalink: /blog/
 		<tr>
 				<td>{% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}</td>
 				<td>{{ post.title }}</td>
-				<td>29.99</td>
+				<td><a href="{{ post.url }}" class="button">Read More</a></td>
 			</tr>
 		{% endfor %}
 		</tbody>
