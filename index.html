@@ -71,7 +71,7 @@ title: Home
               <ul class="features">
               {% for post in site.posts limit:4 %}
                 <li class="icon fa-pencil ">
-                  <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</h3>
+                  <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
                   {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
                   <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
                 </li>

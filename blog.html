@@ -16,11 +16,13 @@ permalink: /blog/
 		</thead>
 		<tbody>
 		{% for post in site.posts %}
-			<tr>
-				<td>><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</td>
+		<a href="{{ post.url }}" title="{{ post.title }}">
+		<tr>
+				<td><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</td>
 				<td>Ante turpis integer aliquet porttitor.</td>
 				<td>29.99</td>
 			</tr>
+		</a>
 		{% endfor %}
 		</tbody>
 	</table>
