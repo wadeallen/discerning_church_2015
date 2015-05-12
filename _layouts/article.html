@@ -12,8 +12,6 @@ layout: default
 
 	{% if page.date %}<h4><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time></h4>{% endif %}
 
-	{% if page.picture %}<span class="image right"><img src="/images/blog_pictures/{{ page.picture }}.jpg" alt="" /></span>{% endif %}
-
     {{ content }}
 
     	<ul class="actions vertical">
