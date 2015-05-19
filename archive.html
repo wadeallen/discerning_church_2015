@@ -5,6 +5,13 @@ description: A complete listing of all entries
 permalink: /archive/
 ---
 
+<section>
+  <!-- my custom google search -->
+<form onsubmit="my_search_google()" >
+  <input type="text" id="my-google-search">
+</form>
+</section>
+
 <section id="archive">
   <h3>This year's posts</h3>
   {%for post in site.posts %}
