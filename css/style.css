@@ -41,6 +41,17 @@
 		quotes: none;
 	}
 
+	blockquote footer {
+		padding-top: 30px;
+		padding-right: 20px;
+		float: right;
+		font-style: normal;
+	}
+
+	blockquote footer:before {
+		content: '–';
+	}
+
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
